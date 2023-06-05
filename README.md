@@ -32,10 +32,10 @@ Next, I created my training function that creates checkpoints every epoch (to re
 
 Lastly, I trained my model on my training set and found the following results (the graph represents the decline of the loss as the model was training).
 
-![Model Performance]()
+<!-- ![Model Performance]()
 
-![Video Explanation]()
+![Video Explanation]() -->
 
 # Resources
 
-I drew inspiration from my CSE 455 coursework and example notebooks to 
+I drew inspiration from my CSE 455 coursework and example notebooks to understand how to train a model and how to transfer learning from a different dataset to your dataset. I also used Papers With Code to get a deeper understanding of how the ResNeXt block works. I also understood PyTorch's source code for [ResNet](https://pytorch.org/vision/main/_modules/torchvision/models/resnet.html) to manipulate it and create my ResNeXt block.

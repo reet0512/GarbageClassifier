@@ -33,7 +33,8 @@ Lastly, I trained my model on my training set and found the following results:
 
 ![Model Performance](./Model_Performance.png) 
 
- ### [Video Explanation](./Video_Explanation.mp4)
+### [Video Explanation](https://youtu.be/slA0HhrZkVY)
+### [Alternate Video Download Link](https://drive.google.com/file/d/12njE5uI_Pbcch-WY58g3Sirc3IFW3Pmh/view?usp=sharing)
 
 ## Future Improvements
 

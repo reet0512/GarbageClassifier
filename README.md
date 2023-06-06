@@ -38,12 +38,13 @@ Lastly, I trained my model on my training set and found the following results:
 ### [Video Explanation](https://youtu.be/slA0HhrZkVY)
 ### [Alternate Video Download Link](https://drive.google.com/file/d/12njE5uI_Pbcch-WY58g3Sirc3IFW3Pmh/view?usp=sharing)
 
-## **Future Improvements**
+## **Problems Encountered and Proposed Future Improvements**
 
-- Increasing size of model and adding more images for tougher classes such as white-glass, biological, and trash.
-- Adding more layers, adding more epochs and tuning the hyperparameters further to increase model accuracy.
+- Increasing size of dataset by adding more images to predict tougher classes such as white-glass, biological, and trash.
+- Adding more layers, training for more epochs, and tuning the hyperparameters further to increase model accuracy.
 - Utilising a stronger method for resizing images to avoid issues created by blurred resized images.
+- After clarifying the classifier further, I can hard-code waste management strategies for the 12 garbage classes.
 
 ## **Resources**
 
-I drew inspiration from my CSE 455 coursework and example notebooks to understand how to train a model,  calculate accuracies, and perform data augmentations. I also used Papers With Code to get a deeper understanding of how the ResNeXt block works. I also understood PyTorch's source code for [ResNet](https://pytorch.org/vision/main/_modules/torchvision/models/resnet.html) to manipulate it and create my ResNeXt block.
+I drew inspiration from my CSE 455 coursework and example notebooks to understand how to train a model,  calculate accuracies, and perform data augmentations. I also used Papers With Code to get a deeper understanding of how the ResNeXt block works. I also understood PyTorch's source code for [ResNet](https://pytorch.org/vision/main/_modules/torchvision/models/resnet.html) to manipulate it and create my ResNeXt block with a cardinality of 32. The ResNeXt block also has an expansion of 2 instead of the standard 1 since it suited the doubling channels nature of the model and performed better in practice.

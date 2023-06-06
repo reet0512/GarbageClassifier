@@ -1,9 +1,11 @@
 # **Garbage Classifier**
 
+## **[Google Colab Link](https://colab.research.google.com/drive/1UB9aXuc-rFjtGnL5mVnideBpaf81un77?usp=sharing)**
+
 ## **Inspiration**
 After spending almost 3 years in the Seattle, I realised that I got into a habit of following careful waste segregation practices that I never practiced where I came from. After talking to my friends from India, I realised that the biggest issue for this disparity was the fact that most people in India didn't know proper waste management and didn't really care to find out. Therefore, I decided to create this project to create a classifier that can take an user's image to classify garbage and then segregate them into their respective categories.
 
-## Dataset
+## **Dataset**
 
 I used a kaggle dataset with 15,150 images and 12 classes:
 - Battery(945)
@@ -21,7 +23,7 @@ I used a kaggle dataset with 15,150 images and 12 classes:
 
 Link to the dataset: https://www.kaggle.com/datasets/mostafaabla/garbage-classification
 
-## Strategy
+## **Strategy**
 
 Firstly, I imported the data onto a google colab session and performed some data augmentation on the data set. For the training data, I employed resizing of the image into a 3x128x128 image (CxHxW format), random crop with a 4px padding, random horizontal flips, random perspective transformation, random rotation, and random shear. I then split the data set into train and test sets with a 20% split ratio.
 
@@ -36,12 +38,12 @@ Lastly, I trained my model on my training set and found the following results:
 ### [Video Explanation](https://youtu.be/slA0HhrZkVY)
 ### [Alternate Video Download Link](https://drive.google.com/file/d/12njE5uI_Pbcch-WY58g3Sirc3IFW3Pmh/view?usp=sharing)
 
-## Future Improvements
+## **Future Improvements**
 
 - Increasing size of model and adding more images for tougher classes such as white-glass, biological, and trash.
 - Adding more layers, adding more epochs and tuning the hyperparameters further to increase model accuracy.
 - Utilising a stronger method for resizing images to avoid issues created by blurred resized images.
 
-## Resources
+## **Resources**
 
 I drew inspiration from my CSE 455 coursework and example notebooks to understand how to train a model,  calculate accuracies, and perform data augmentations. I also used Papers With Code to get a deeper understanding of how the ResNeXt block works. I also understood PyTorch's source code for [ResNet](https://pytorch.org/vision/main/_modules/torchvision/models/resnet.html) to manipulate it and create my ResNeXt block.
